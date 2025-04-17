@@ -45,6 +45,7 @@ def test_roc_curve_display_binary_classification(pyplot, binary_classification_d
     report = EstimatorReport(
         estimator, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test
     )
+    breakpoint()
     display = report.metrics.roc()
     assert isinstance(display, RocCurveDisplay)
 
